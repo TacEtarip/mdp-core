@@ -1,0 +1,35 @@
+<div class="login-card">
+  <div class="login-card-top">
+    <img width="100px" src="/assets/productividad.png" alt="task-logo" />
+  </div>
+  <div class="login-card-content">
+    <mat-form-field appearance="fill">
+      <mat-label>User</mat-label>
+      <input matInput />
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Password</mat-label>
+      <input matInput [type]="hide ? 'password' : 'text'" />
+      <button
+        mat-icon-button
+        matSuffix
+        (click)="hide = !hide"
+        [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide"
+      >
+        <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+      </button>
+    </mat-form-field>
+    <button
+      class="login-btn"
+      routerLink="/dashboard"
+      mat-flat-button
+      color="primary"
+    >
+      Login
+    </button>
+  </div>
+  <div class="login-card-bottom">
+    <h4>Olvido su contraseña?</h4>
+  </div>
+</div>

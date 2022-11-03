@@ -1,0 +1,17 @@
+.login-main {
+  background-color: white;
+  display: grid;
+  height: 100%;
+  grid-template-rows: auto 110px;
+  align-items: center;
+}
+
+.mdp-logo {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .login-main {
+    justify-content: center;
+  }
+}
