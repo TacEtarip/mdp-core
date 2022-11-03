@@ -16,18 +16,17 @@
       fixedTopGap="56"
     >
       <mat-nav-list>
-        <a
-          [ngStyle]="{ width: '200px' }"
-          mat-list-item
-          routerLink="."
-          *ngFor="let nav of fillerNav"
-          >{{ nav }}</a
-        >
+        <mat-list-item>
+          <mat-icon mat-list-icon>assignment</mat-icon>
+          <a class="nav-link" matLine routerLink="assignments">Assignments</a>
+        </mat-list-item>
       </mat-nav-list>
     </mat-sidenav>
 
     <mat-sidenav-content>
-      <p>content</p>
+      <div class="content-wrapper">
+        <router-outlet></router-outlet>
+      </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>
