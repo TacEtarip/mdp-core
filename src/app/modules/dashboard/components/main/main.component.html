@@ -1,8 +1,9 @@
 <div class="container" [class.is-mobile]="mobileQuery.matches">
-  <mat-toolbar color="primary" class="toolbar">
+  <mat-toolbar class="toolbar">
     <button mat-icon-button (click)="snav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
+    <span>Feedback</span>
   </mat-toolbar>
 
   <mat-sidenav-container
@@ -16,9 +17,9 @@
       fixedTopGap="56"
     >
       <mat-nav-list>
-        <mat-list-item>
-          <mat-icon mat-list-icon>assignment</mat-icon>
-          <a class="nav-link" matLine routerLink="assignments">Assignments</a>
+        <mat-list-item routerLink="assignments">
+          <mat-icon class="nav-icon" mat-list-icon>assignment</mat-icon>
+          <a class="nav-link" matLine>Assignments</a>
         </mat-list-item>
       </mat-nav-list>
     </mat-sidenav>

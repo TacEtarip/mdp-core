@@ -28,8 +28,20 @@
 
 .nav-link {
   width: 140px;
+  color: #ff4081;
+}
+
+.nav-icon {
+  color: #ff4081;
 }
 
 .content-wrapper {
+  min-height: 100%;
+  background-color: whitesmoke;
   padding: 1.5rem;
+}
+
+.toolbar {
+  color: #3f51b5;
+  background-color: white;
 }
